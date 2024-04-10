@@ -1,2 +1,3 @@
 My first Jenkins integrations
 added another line of code
+Declarative pipeline check
