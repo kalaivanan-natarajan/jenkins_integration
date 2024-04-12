@@ -11,7 +11,13 @@ pipeline
                 echo 'Build App'
             } 
         }
- 
+         stage ('Test')
+        {
+            steps
+            {
+                echo 'Test App'
+            }
+        }
         stage ('Build1')
         {
             steps
@@ -19,11 +25,11 @@ pipeline
                 echo 'Build1 App'
             } 
         }
-        stage ('Test')
+        stage ('SPB')
         {
             steps
             {
-                echo 'Test App'
+                echo 'SPB App'
             }
         }
         stage ('Deploy')
